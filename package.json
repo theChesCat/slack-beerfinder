@@ -1,0 +1,17 @@
+{
+  "name": "findbeer",
+  "version": "1.0.0",
+  "description": "A trivial node server to retrieve beers from Untappd API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paloma Sedeau",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "promise": "^7.1.1",
+    "query-string": "^4.2.2",
+    "request": "^2.74.0"
+  }
+}
