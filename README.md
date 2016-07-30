@@ -1,10 +1,11 @@
 # Slack Beerfinder
 
+A trivial node express server that find beers on Untappd. The server is listening for a Slack slash command webhook and responding with a Slack payload.
+That's all.
 
 ### What's in
-A trivial node express server that find beers on Untappd.
-The server is listening for a Slack slash command webhook and responding with a Slack payload.
-That's all.
+* An [ExpressJS](https://expressjs.com/) server
+* A [daemon](https://www.npmjs.com/package/start-stop-daemon) to let the server run forever
 
 
 ### What's not in
@@ -16,8 +17,12 @@ Slack or Untappd API keys :)
 
 2/ Run a web service somewhere. If you just want to test Beerfinder on a local environment, I highly recommand you [localtunnel](https://localtunnel.github.io/www/)
 
-3/ Clone this repository, create a config.js file (there's a config.sample.js) and fill it with your API credentials.
+3/ Clone this repository, and run `$ npm install`.
 
-4/ run `$ node main.js` and test your slack command.
+4/ Create a config.js file (there's a config.sample.js) and fill it with your API credentials.
+
+5/ run `$ node main.js` to test the server, or `$ node main.js start` to start it with the daemon. To stop the daemon, just run `$ node main.js stop`.
+
+
 The slash command in action should look like this :
 ![screenshot](https://raw.githubusercontent.com/theChesCat/slack-beerfinder/master/screenshot.png)
