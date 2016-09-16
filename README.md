@@ -25,4 +25,4 @@ Slack or Untappd API keys :)
 
 
 The slash command in action should look like this :
-![screenshot](https://raw.githubusercontent.com/theChesCat/slack-beerfinder/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/theChesCat/slack-sms/master/screenshot.png)
